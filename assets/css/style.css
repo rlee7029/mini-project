@@ -1,0 +1,57 @@
+* { 
+    background-color: rgb(51, 48, 48);
+    margin: 0;
+}
+
+.header h1 {
+    color:purple;
+    text-align: center;
+
+}
+.header h2 {
+    color: white;
+    font-size: medium;
+    text-align: center;
+   
+}
+.section{
+    display: flex;
+    width: 100px;
+    flex-wrap: nowrap;
+}
+
+.card{
+    border-style: dashed;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: white;
+    text-align: left;
+    position: relative;
+
+
+}
+
+.card h2{
+    color: purple;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-width:1px;
+    text-align: left;
+    
+
+}
+
+.card h3{
+    color: purple;
+
+}
+
+.card h4{
+    background-color: purple;
+    color: white;
+    font-family: monospace;
+    border-radius: 5px;
+   
+}
+
