@@ -15,30 +15,42 @@
    
 }
 .section{
-    display: flex;
+    display: grid;
     width: 100px;
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(3, 1fr);
+    padding:2%;
+    flex-direction: column;
+    flex:1; 
+    justify-content: space-between;
 }
 
 .card{
-    border-style: dashed;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: white;
-    text-align: left;
-    position: relative;
-
-
+   margin: 25px;
+   border-style: dashed;
+   text-align: center;
+   border-width: 2px;
+   flex-direction: column;
+   display: flex;
+   max-width: 100%;
+   padding:2%;
+   
 }
 
 .card h2{
-    color: purple;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    border-width:1px;
-    text-align: left;
-    
+    position: relative;
+    top: -25px;
+    left: 10%;
+    border: white solid 5px;
+    width: 70%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+    display:block;
+   
 
 }
 
@@ -55,3 +67,24 @@
    
 }
 
+.footer {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        display: grid;
+        width: 50%;
+        grid-template-columns:
+            repeat(1fr 1fr);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card {
+        display: grid;
+        width: 100%;
+        grid-column: 1;
+    }
+    }
